@@ -26,21 +26,21 @@ function HomePage() {
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">California Insurance Guide</h2>
-          <p className="text-xl text-blue-200 mb-8">Your trusted source for California insurance news, laws, and resources</p>
+          <p className="text-xl text-blue-200 mb-6">Your trusted source for California insurance news, laws, and resources</p>
+          <p className="text-blue-300 text-lg mb-10 max-w-2xl mx-auto">We help California homeowners and drivers navigate one of the most complex insurance markets in the country — from wildfire-prone areas to earthquake coverage gaps, high premiums, and carrier exits. No jargon, no pressure.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer"
-               className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold px-8 py-4 rounded-xl text-lg transition transform hover:scale-105">
-              🚀 Get a Free Quote
+            <a href="#overview" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-4 rounded-xl text-lg transition">
+              📖 Explore the Guide
             </a>
-            <a href="tel:800-616-1418" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-4 rounded-xl text-lg transition">
-              📞 Call 800-616-1418
+            <a href="#tips" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-4 rounded-xl text-lg transition">
+              💡 California Insurance Tips
             </a>
           </div>
         </div>
       </section>
 
       {/* State Overview */}
-      <section className="py-16 bg-white">
+      <section id="overview" className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-blue-900 mb-8">California Insurance Overview</h2>
           <div className="prose max-w-none">
@@ -168,7 +168,7 @@ function HomePage() {
       </section>
 
       {/* Insurance Tips */}
-      <section className="py-16 bg-white">
+      <section id="tips" className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-blue-900 mb-8">Insurance Tips for California Residents</h2>
           <div className="space-y-4">
@@ -197,16 +197,17 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Quote CTA */}
+      {/* Quote CTA — appears after all value content */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Find Better California Insurance?</h2>
-          <p className="text-blue-200 text-xl mb-8">Compare rates from top carriers and get the coverage you need.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Still Have Questions About Your Coverage?</h2>
+          <p className="text-blue-200 text-xl mb-4">If you've read through the guide and want a second opinion on your current policy — or just want to see what else is available in California — our local agents are happy to help. No pressure, no obligation.</p>
+          <p className="text-blue-300 mb-8">We work with 150+ carriers across the country, so we'll tell you honestly what's worth it and what's not.</p>
           <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer"
              className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold px-10 py-5 rounded-xl text-xl transition transform hover:scale-105 shadow-lg">
-            🚀 Get Your Free California Insurance Quote
+            🚀 Get a Free, No-Obligation Quote
           </a>
-          <p className="mt-4 text-blue-200 text-sm">No obligation · Takes 2 minutes · Local California agents available</p>
+          <p className="mt-4 text-blue-200 text-sm">Takes 2 minutes · Local agents · 150+ carriers compared</p>
         </div>
       </section>
 
