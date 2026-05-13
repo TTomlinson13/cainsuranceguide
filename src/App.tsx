@@ -23,7 +23,22 @@ function HomePage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
+      <section className="relative text-white py-20 overflow-hidden" style={{minHeight: '420px'}}>
+        {/* Video background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{zIndex: 0}}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-blue-900/75" style={{zIndex: 1, pointerEvents: 'none'}}></div>
+        {/* Content */}
+        <div className="relative" style={{zIndex: 2}}>
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">California Insurance Guide</h2>
           <p className="text-xl text-blue-200 mb-6">Your trusted source for California insurance news, laws, and resources</p>
@@ -36,6 +51,7 @@ function HomePage() {
               💡 California Insurance Tips
             </a>
           </div>
+        </div>
         </div>
       </section>
 
